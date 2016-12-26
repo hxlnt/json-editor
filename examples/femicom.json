@@ -1,0 +1,49 @@
+{
+    "id": {
+        "type": "integer",
+        "minimum": 0
+    },
+    "title": {
+        "native": {
+            "type": "string",
+            "default": "あにめらんど"
+        },
+        "romanized": {
+            "type": "string",
+            "default": "Anime Land"
+        }
+    },
+    "publisher": {
+        "type": "array"
+    },
+    "developer": {
+        "type": "array"
+    }
+}
+
+{
+  
+  "Person",
+  "type": "object",
+  "id": "person",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "First and Last name",
+      "minLength": 4
+    },
+    "age": {
+      "type": "integer",
+      "default": 21,
+      "minimum": 18,
+      "maximum": 99
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female"
+      ]
+    }
+  }
+}
