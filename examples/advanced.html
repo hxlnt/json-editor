@@ -27,8 +27,7 @@
     
     <script>
       // This is the starting value for the editor
-      // We will use this to seed the initial editor 
-      // and to provide a "Restore to Default" button.
+      // We will use this to seed the initial editor       // and to provide a "Restore to Default" button.
       var starting_value = [
         {
           name: "John Smith",
@@ -69,7 +68,7 @@
             headerTemplate: "{{i}} - {{self.name}}",
             oneOf: [
               {
-                $ref: "../femicom.json",
+                $ref: "femicom.json",
                 title: "Complex Person"
               }
             ]
