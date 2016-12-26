@@ -18,32 +18,30 @@
     },
     "developer": {
         "type": "array"
-    }
-}
-
-{
-  
-  "Person",
-  "type": "object",
-  "id": "person",
-  "properties": {
-    "name": {
-      "type": "string",
-      "description": "First and Last name",
-      "minLength": 4
     },
-    "age": {
-      "type": "integer",
-      "default": 21,
-      "minimum": 18,
-      "maximum": 99
+    "releasedate": {
+        "year": {
+            "type": "integer",
+            "minimum": 1900,
+            "default": 1995
+        },
+        "month": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+        },
+        "day": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 31
+        }
     },
-    "gender": {
-      "type": "string",
-      "enum": [
-        "male",
-        "female"
-      ]
+    "mediaformat": {
+        "type": "string",
+        "enum": ["cartridge", "3.5-in. disk", "5.25-in. disk", "FDS disk", "CD-ROM"]
+    },
+    "platform": {
+        "type": "string",
+        "enum": ["Casio Loopy","NES","SNES"]
     }
-  }
 }
